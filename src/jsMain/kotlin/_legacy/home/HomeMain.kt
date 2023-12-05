@@ -1,9 +1,9 @@
-package screens.home
+package _legacy.home
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.Main
-import repository.chart.ChartRepository
+import _legacy.ChartRepository
 
 @Composable
 fun HomeMain(chartRepository: ChartRepository) {

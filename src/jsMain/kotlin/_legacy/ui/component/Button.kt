@@ -1,11 +1,11 @@
-package ui.component
+package _legacy.ui.component
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.Button
 import org.jetbrains.compose.web.dom.Text
-import ui.ColorButtonGreen
-import ui.ColorWhite
+import _legacy.ui.ColorButtonGreen
+import _legacy.ui.ColorWhite
 
 @Composable
 fun RoundedButton(text: String, onClick: () -> Unit) {

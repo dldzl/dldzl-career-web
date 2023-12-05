@@ -1,6 +1,6 @@
-package repository.chart
+package _legacy
 
-import repository.chart.model.Song
+import _legacy.chart.model.Song
 
 interface ChartRepository {
     suspend fun getMelonChart(): List<Song>

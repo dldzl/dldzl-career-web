@@ -1,4 +1,4 @@
-package screens.home
+package _legacy.home
 
 import androidx.compose.runtime.Composable
 import kotlinx.browser.window
@@ -6,9 +6,9 @@ import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.Br
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Text
-import ui.ColorFadeBlack
-import ui.ColorWhite
-import ui.component.RoundedButton
+import _legacy.ui.ColorFadeBlack
+import _legacy.ui.ColorWhite
+import _legacy.ui.component.RoundedButton
 
 @Composable
 fun LargeBanner() {

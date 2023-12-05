@@ -1,7 +1,7 @@
-package utils
+package _legacy.utils
 
 import org.w3c.xhr.XMLHttpRequest
-import repository.chart.model.Song
+import _legacy.chart.model.Song
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 

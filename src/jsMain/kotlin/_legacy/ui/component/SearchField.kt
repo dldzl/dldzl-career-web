@@ -1,15 +1,14 @@
-package ui.component
+package _legacy.ui.component
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.attributes.InputType
-import org.jetbrains.compose.web.attributes.placeholder
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.Form
 import org.jetbrains.compose.web.dom.Input
-import supports.compose.FontAwesome
-import ui.ColorSearchFieldBackground
-import ui.ColorWhite
-import ui.ColorWhiteGray
+import _legacy.compose.FontAwesome
+import _legacy.ui.ColorSearchFieldBackground
+import _legacy.ui.ColorWhite
+import _legacy.ui.ColorWhiteGray
 
 @Composable
 fun SearchField(text: String = "", placeholder: String = "", onInput: (text: String) -> Unit) {

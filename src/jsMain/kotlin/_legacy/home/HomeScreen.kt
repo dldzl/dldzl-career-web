@@ -1,8 +1,8 @@
-package screens.home
+package _legacy.home
 
 import androidx.compose.runtime.Composable
-import repository.chart.impl.ChartRepositoryImpl
-import supports.compose.Body
+import _legacy.ChartRepositoryImpl
+import _legacy.compose.Body
 
 @Composable
 fun HomeScreen() {

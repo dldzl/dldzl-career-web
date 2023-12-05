@@ -1,4 +1,4 @@
-package ui
+package _legacy.ui
 
 import org.jetbrains.compose.web.css.Color
 

@@ -1,11 +1,11 @@
-package supports.compose
+package _legacy.compose
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.ContentBuilder
 import org.jetbrains.compose.web.dom.Div
 import org.w3c.dom.HTMLDivElement
-import ui.ColorPrimary
+import _legacy.ui.ColorPrimary
 
 @Composable
 fun Body(backgroundColor: CSSColorValue = ColorPrimary, content: ContentBuilder<HTMLDivElement>) {

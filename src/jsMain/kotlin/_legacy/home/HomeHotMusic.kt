@@ -1,4 +1,4 @@
-package screens.home
+package _legacy.home
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -8,10 +8,10 @@ import kotlinx.coroutines.launch
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.w3c.dom.HTMLDivElement
-import repository.chart.ChartRepository
-import repository.chart.model.Song
-import ui.ColorRealWhiteGray
-import ui.ColorWhite
+import _legacy.ChartRepository
+import _legacy.chart.model.Song
+import _legacy.ui.ColorRealWhiteGray
+import _legacy.ui.ColorWhite
 
 val dummyMusicList = listOf(
     Song("이 시간에 rebirth", "제이키드먼(JAY KIDMAN)", "https://image.bugsm.co.kr/album/images/500/4502/450236.jpg"),

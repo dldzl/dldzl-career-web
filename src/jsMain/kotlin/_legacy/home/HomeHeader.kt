@@ -1,7 +1,6 @@
-package screens.home
+package _legacy.home
 
 import androidx.compose.runtime.Composable
-import kotlinx.browser.window
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.css.keywords.auto
 import org.jetbrains.compose.web.dom.A
@@ -9,10 +8,10 @@ import org.jetbrains.compose.web.dom.ContentBuilder
 import org.jetbrains.compose.web.dom.Header
 import org.jetbrains.compose.web.dom.Nav
 import org.w3c.dom.HTMLElement
-import supports.compose.SelectText
-import supports.compose.borderBottom
-import ui.ColorBorder
-import ui.component.SearchField
+import _legacy.compose.SelectText
+import _legacy.compose.borderBottom
+import _legacy.ui.ColorBorder
+import _legacy.ui.component.SearchField
 
 @Composable
 fun HomeHeader() {

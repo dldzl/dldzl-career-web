@@ -1,4 +1,4 @@
-package supports.compose
+package _legacy.compose
 
 import org.jetbrains.compose.web.css.*
 

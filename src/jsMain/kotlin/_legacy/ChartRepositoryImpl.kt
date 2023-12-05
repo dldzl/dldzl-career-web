@@ -1,8 +1,7 @@
-package repository.chart.impl
+package _legacy
 
-import repository.chart.ChartRepository
-import repository.chart.model.Song
-import utils.HttpRequest
+import _legacy.chart.model.Song
+import _legacy.utils.HttpRequest
 
 class ChartRepositoryImpl : ChartRepository {
     private val httpRequest = HttpRequest()

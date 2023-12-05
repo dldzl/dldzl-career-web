@@ -1,4 +1,4 @@
-package supports.compose
+package _legacy.compose
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.dom.AttrBuilderContext

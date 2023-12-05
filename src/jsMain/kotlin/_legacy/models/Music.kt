@@ -1,4 +1,4 @@
-package models
+package _legacy.models
 
 data class Music(
     val name: String,

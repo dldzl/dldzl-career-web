@@ -1,16 +1,16 @@
-package screens.home
+package _legacy.home
 
 import androidx.compose.runtime.Composable
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.w3c.dom.HTMLSpanElement
 import org.w3c.dom.HTMLUListElement
-import supports.compose.SelectText
-import supports.compose.borderBottom
-import supports.compose.borderRight
-import ui.ColorBlue
-import ui.ColorBorder
-import ui.ColorPrimary
+import _legacy.compose.SelectText
+import _legacy.compose.borderBottom
+import _legacy.compose.borderRight
+import _legacy.ui.ColorBlue
+import _legacy.ui.ColorBorder
+import _legacy.ui.ColorPrimary
 
 @Composable
 fun HomeSidebar() {

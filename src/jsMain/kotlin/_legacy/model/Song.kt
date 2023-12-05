@@ -1,4 +1,4 @@
-package repository.chart.model
+package _legacy.chart.model
 
 data class Song(
     val title: String,
