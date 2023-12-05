@@ -1,10 +1,9 @@
-import org.jetbrains.compose.compose
 plugins {
-    kotlin("multiplatform") version "1.9.21"// "1.5.31"
-    id("org.jetbrains.compose") version "1.5.11"// "1.0.0"
+    kotlin("multiplatform") version "1.9.21"
+    id("org.jetbrains.compose") version "1.5.11"
 }
 
-group = "com.haeyum"
+group = "app.dldzl.career"
 version = "1.0"
 
 repositories {
@@ -27,13 +26,11 @@ kotlin {
         binaries.executable()
     }
     sourceSets {
-        named("jsMain") {
+        val jsMain by getting {
             dependencies {
-                implementation(compose.web.core)
+                implementation(compose.html.core)
                 implementation(compose.runtime)
-                // jsoup
-                implementation("org.jsoup:jsoup:1.14.2")
-                implementation("com.squareup.retrofit2:retrofit:2.6.4")
+                implementation("com.squareup.retrofit2:retrofit:2.9.0")
             }
         }
         val jsTest by getting {
