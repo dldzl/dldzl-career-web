@@ -1,8 +1,45 @@
+import org.jetbrains.compose.compose
 plugins {
-    // this is necessary to avoid the plugins to be loaded multiple times
-    // in each subproject's classloader
-    alias(libs.plugins.jetbrainsCompose) apply false
-    alias(libs.plugins.androidApplication) apply false
-    alias(libs.plugins.androidLibrary) apply false
-    alias(libs.plugins.kotlinMultiplatform) apply false
+    kotlin("multiplatform") version "1.9.21"// "1.5.31"
+    id("org.jetbrains.compose") version "1.5.11"// "1.0.0"
+}
+
+group = "com.haeyum"
+version = "1.0"
+
+repositories {
+    google()
+    mavenCentral()
+    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+}
+
+kotlin {
+    js(IR) {
+        browser {
+            testTask {
+                testLogging.showStandardStreams = true
+                useKarma {
+                    useChromeHeadless()
+                    useFirefox()
+                }
+            }
+        }
+        binaries.executable()
+    }
+    sourceSets {
+        named("jsMain") {
+            dependencies {
+                implementation(compose.web.core)
+                implementation(compose.runtime)
+                // jsoup
+                implementation("org.jsoup:jsoup:1.14.2")
+                implementation("com.squareup.retrofit2:retrofit:2.6.4")
+            }
+        }
+        val jsTest by getting {
+            dependencies {
+                implementation(kotlin("test-js"))
+            }
+        }
+    }
 }
